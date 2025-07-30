@@ -68,6 +68,9 @@ cd YourProject
 
 ---
 
+## zippedfiles
+* unzip corrected_image.nii.zip, and put the unzipped file under the directory of Icon
+
 ## Getting Started
 
 * All required Python packages are listed in the `requirements.txt` file.
