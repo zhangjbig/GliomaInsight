@@ -1,0 +1,5 @@
+voxelSetting:
+  kernelRadius: 2
+  maskedKernel: true
+  initValue: nan
+  voxelBatch: 10000
