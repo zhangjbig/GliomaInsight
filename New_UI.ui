@@ -1,0 +1,2392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2133</width>
+    <height>1416</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>51</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>2100</width>
+     <height>1400</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{
+	border: 5px, white;
+	border-radius: 20px;
+	margin: 5px;
+	border-image:url(./Img/nNew_ui.png);	
+	background:transparent;
+}
+#frame2{
+	border: 5px, white;
+	border-radius: 20px;
+	margin: 5px;
+	background:50% transparent;
+}
+
+#groupBox,#groupBox_2,#groupBox_3,#groupBox_6{
+color: rgb(160, 168, 182);
+font: 75 12pt &quot;Bahnschrift&quot;;
+border:2px solid rgb(137, 195, 235);
+border-radius:5px;
+subcontrol-origin:margin;
+}
+#lineEdit_2{
+background: transparent;
+color: rgb(54, 178, 244);
+font: 75 18pt &quot;Bahnschrift&quot;;
+border:none;
+}
+QTextBrowser{
+color: rgb(107, 172, 207);
+font: 75 12pt &quot;Bahnschrift&quot;;
+border: tranparent;
+}
+#textBrowser{
+color: rgb(107, 172, 207);
+font: 75 9pt &quot;Bahnschrift&quot;;
+border: tranparent;
+}
+#textBrowser_4{
+color: rgb(112, 144, 176);
+font: 75 9pt &quot;Bahnschrift&quot;;
+border: tranparent;
+}
+#textBrowser_3，#textBrowser_5{
+color: rgb(107, 172, 207);
+font: 75 10pt &quot;Bahnschrift&quot;;
+border: tranparent;
+}
+QStackedWidget{
+background-image:url(./Img/SW_BG.png);
+}
+#stackedWidget_3{
+background:tranparent;
+}
+QListWidget{
+background:transparent;
+color:rgb(137, 195, 235);
+font: 75 14pt &quot;Bahnschrift&quot;;
+boder:none;
+}
+QScrollArea{
+border:none;
+}
+#scrollAreaWidgetContents{
+border-image: tranparent;
+}
+QCheckBox{
+color: rgb(255, 233, 233);
+font: 75 10pt &quot;Bahnschrift&quot;;
+gridline-color: rgb(137, 195, 235);
+border-top-color: rgb(137, 195, 235);
+border-color: rgb(137, 195, 235);
+border-top-radius:0px;
+border-top-left-radius:0px;
+border-bottom-radius:0px;
+border-bottom-left-radius:0px;
+}
+QLabel{
+	color: rgb(137, 195, 235);
+	font: 75 12pt &quot;Bahnschrift&quot;;
+}
+QLineEdit{
+background-color:rgb(154, 170, 182);	
+color: rgb(255, 233, 233);
+font: 75 10pt &quot;Bahnschrift&quot;;
+border:none;
+border-radius:8px;
+}
+QRadioButton{
+color: rgb(235, 246, 247);
+font: 75 14pt &quot;Bahnschrift&quot;;
+}
+QComboBox{
+background-color: transparent;
+font: 75 12pt &quot;Bahnschrift&quot;;
+border:2px solid #ffffff;
+border-radius:8px;
+color:rgb(137, 195, 235)
+}
+QComboBox::drop-down{
+subcontrol-origin: padding;
+width:40px;
+border-left-width :  2px ;
+border-left-color : #ffffff;
+border-left-style :  solid ;  
+border-top-right-radius:  3px ;  
+border-bottom-right-radius:  3px ;
+}
+QComboBox::down-arrow{
+image:url(./Icon/angle-small-down.png)
+}
+
+#pushButton_ori_2,#pushButton_ori,#pushButton_2,
+#pushButton,#pushButton_18,#pushButton_19,#pushButton_20,#pushButton_21
+{
+	background-color: transparent;	
+	color:rgb(137, 195, 235);
+	font: 75 13pt &quot;Bahnschrift&quot;;
+	border:none;
+}
+#pushButton_ori_2:hover,
+#pushButton_ori:hover,
+#pushButton_2:hover,
+#pushButton:hover{
+	color:rgb(52, 231, 254);
+	border:none;
+}
+#pushButton_18:hover,
+#pushButton_19:hover,
+#pushButton_20:hover,
+#pushButton_21:hover{
+	border:1px solid #89c3eb;
+}
+QPushButton{
+	background-color: transparent;	
+	color:rgb(137, 195, 235);
+	border:1px solid #89c3eb;
+	font: 75 13pt &quot;Bahnschrift&quot;;
+}
+QPushButton:hover{ 
+color:rgb(53, 171, 239);
+border-radius:6px;
+border:2px solid #2980b6;
+}
+
+QPushButton:pressed{
+border: 1px solid #3C3C3C;
+border-radius:6px;
+background:rgb(124, 195, 255);
+}
+QGraphicsView{
+background-color:rgb(0, 0, 27);
+border:none;
+}
+#stackedWidget_3{
+background-color:rgb(68, 97, 125);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="geometry">
+     <rect>
+      <x>2050</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:rgb(141, 173, 182);
+color:white;
+box-shadow: 1px 1px 3px;
+border-radius: 10px;
+}
+QPushButton:hover{ 
+background:rgb(137, 195, 235);
+}
+QPushButton:pressed{
+border: 1px solid #3C3C3C!important;
+background:black;rgb(156, 175, 182)
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>221</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Welcome!</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DLP Features</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pyradiomics</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>221</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_ori_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Q &amp;&amp; A</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_ori">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Input Image</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Input Label</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Save Data</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>187</y>
+      <width>471</width>
+      <height>1191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-image:url(./Img/SW_BG.png);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="WelPage">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Welcome to Extracmator!</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>451</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>460</y>
+        <width>451</width>
+        <height>721</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="RadiomicsPage">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>471</width>
+        <height>1011</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>12</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+border:2px solid rgb(137, 195, 235);
+border-radius:15px;
+}
+QGroupBox ::title {
+subcontrol-origin:margin;
+padding:0px;
+}
+QCheckBox{
+color:rgb(137, 195, 235);
+font: 75 10pt &quot;Bahnschrift&quot;;
+gridline-color: rgb(137, 195, 235);
+border-top-color: rgb(137, 195, 235);
+border-color: rgb(137, 195, 235);
+border-top-radius:0px;
+border-top-left-radius:0px;
+border-bottom-radius:0px;
+border-bottom-left-radius:0px;
+}
+QLabel{
+	color: rgb(235, 246, 247);
+	font: 9pt &quot;Arial Rounded MT Bold&quot;;
+}
+QLineEdit{
+background-color: rgb(41, 128, 182);	
+color: rgb(255, 233, 233);
+font:  9pt &quot;Cascadia Code SemiLight&quot;;
+border:none;
+border-radius:8px;
+}
+QRadioButton{
+color: rgb(235, 246, 247);
+	font: 9pt &quot;Arial Rounded MT Bold&quot;;
+}
+QComboBox{
+background-color: rgb(137, 195, 235);
+font: 9pt &quot;Cascadia Code SemiLight&quot;;
+border:2px solid #ffffff;
+border-radius:8px;
+}
+QComboBox::drop-down{
+subcontrol-origin: padding;
+width:40px;
+border-left-width :  2px ;
+border-left-color : #ffffff;
+border-left-style :  solid ;  
+border-top-right-radius:  3px ;  
+border-bottom-right-radius:  3px ;
+}
+QComboBox::down-arrow{
+image:url(./Icon/angle-small-down.png)
+}
+QPushButton{
+	border:2px solid #ffffff;
+	border-radius:8px;
+	background-color: rgb(137, 195, 255);	
+	color: rgb(0, 0, 70);
+	
+	font: 9pt &quot;Calibri&quot;;
+	border-radius: 10px;
+}
+QPushButton:hover{ 
+background:rgb(106, 164, 235);
+border-radius:15px;
+border:1px solid #00046;
+}
+QPushButton:pressed{
+border: 1px solid #3C3C3C;
+background:rgb(124, 195, 255);
+}</string>
+      </property>
+      <property name="title">
+       <string>Custom Setting</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <widget class="QComboBox" name="comboBox_ImgType">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>451</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>51</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <item>
+        <property name="text">
+         <string>Select Data Type to Analysis</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CommonSetting</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR data (with 3mm slice thickness)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR data (with 5mm slice thickness)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MR data without resampling</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>510</y>
+         <width>451</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string>Select Features</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>431</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QCheckBox" name="checkBox_Bin1_2">
+           <property name="text">
+            <string>Enable All features</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_First">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>First Order Statistics</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_shape">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Shape-based(3D))</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glcm">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glcm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glrlm">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glrlm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glszm">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glszm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_gldm">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>gldm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_ngtdm">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>ngtdm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>451</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string>PreProgress Settings</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>421</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="page_5">
+         <widget class="QWidget" name="verticalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>361</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QCheckBox" name="checkBox_Voxel">
+             <property name="text">
+              <string>Voxel Setting</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeatDelay">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page">
+         <widget class="QWidget" name="verticalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>641</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QCheckBox" name="checkBox_Nor3">
+             <property name="text">
+              <string>Normalization</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeatDelay">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Mas4">
+             <property name="text">
+              <string>Mask validation</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Bin4">
+             <property name="text">
+              <string>BinWidth</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Mis2">
+             <property name="text">
+              <string>Misc</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_15">
+             <property name="text">
+              <string>first order specific settings</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QWidget" name="verticalLayoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>641</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QCheckBox" name="checkBox_Nor4">
+             <property name="text">
+              <string>Normalization</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeatDelay">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Res3">
+             <property name="text">
+              <string>Resampling</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Mas3">
+             <property name="text">
+              <string>Mask validation</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Bin3">
+             <property name="text">
+              <string>binWidth</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_14">
+             <property name="text">
+              <string>first order specific settings</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QWidget" name="verticalLayoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>391</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QCheckBox" name="checkBox_Nor2">
+             <property name="text">
+              <string>Normalization</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeatDelay">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Mas2">
+             <property name="text">
+              <string>Mask validation</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Bin2">
+             <property name="text">
+              <string>binWidth</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_12">
+             <property name="text">
+              <string>first order specific settings</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <widget class="QWidget" name="verticalLayoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>401</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QCheckBox" name="checkBox_Nor1">
+             <property name="text">
+              <string>Normalization</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeatDelay">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Res1">
+             <property name="text">
+              <string>Resampling</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_2D1">
+             <property name="text">
+              <string>Forced 2D extracion</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Mas1">
+             <property name="text">
+              <string>Mask validation</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_13">
+             <property name="text">
+              <string>first order specific settings</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_Bin1">
+             <property name="text">
+              <string>binWidth</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="radioButton_Para_Cus">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>449</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Import ParaFile</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_fileName">
+      <property name="geometry">
+       <rect>
+        <x>219</x>
+        <y>1080</y>
+        <width>251</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>220</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter saved file name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1080</y>
+        <width>201</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 10pt &quot;Bahnschrift&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Output table path:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1130</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="DLPFeaturesPage">
+     <widget class="QComboBox" name="comboBox_NetType">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose the Net Type</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/86152/.designer/backup/Icon/search.png</normaloff>C:/Users/86152/.designer/backup/Icon/search.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GoogleNet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DenseNet121</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ResNet18</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VGG16</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VGG19</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>70</y>
+        <width>101</width>
+        <height>59</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>NetType:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Batch import</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_fileName_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>461</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter the saved file name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>461</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>451</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid #ffffff;
+border-radius:8px;
+background-image: url(./Img/SW_BG.png);	
+color: rgb(160, 168, 182);
+font: 75 12pt &quot;Bahnschrift&quot;;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1150</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+	background-color: rgb(114, 163, 195);
+	color:rgb(44, 62, 80);
+	border-style:none;
+	text-align:center;
+	border-radius:10px;
+}
+QProgressBar::chunk{
+	border-radius:10px;
+	background-color:qlineargradient(spread:pad, x1:0,y1:0.511364, x2:1, y2:0.523, stop:0 rgb(41, 128, 182), stop:1 rgb(43, 6, 255));
+}</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+      </property>
+      <property name="invertedAppearance">
+       <bool>true</bool>
+      </property>
+      <property name="textDirection">
+       <enum>QProgressBar::TopToBottom</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="HeterogeneityPage">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>461</width>
+        <height>1061</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cascadia Code SemiLight</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>true</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+border:2px solid rgb(137, 195, 235);
+border-radius:15px;
+color: rgb(255, 255, 255);
+subcontrol-origin:margin;
+}
+QCheckBox{
+color: rgb(255, 233, 233);
+font:  9pt &quot;Cascadia Code SemiLight&quot;;
+gridline-color: rgb(137, 195, 235);
+border-top-color: rgb(137, 195, 235);
+border-color: rgb(137, 195, 235);
+border-top-radius:0px;
+border-top-left-radius:0px;
+border-bottom-radius:0px;
+border-bottom-left-radius:0px;
+}
+QLabel{
+	color: rgb(235, 246, 247);
+	font: 9pt &quot;Arial Rounded MT Bold&quot;;
+}
+QLineEdit{
+background-color: rgb(41, 128, 182);	
+color: rgb(255, 233, 233);
+font:  9pt &quot;Cascadia Code SemiLight&quot;;
+border:none;
+border-radius:8px;
+}
+QRadioButton{
+color: rgb(235, 246, 247);
+	font: 9pt &quot;Arial Rounded MT Bold&quot;;
+}
+QComboBox{
+background-color: rgb(137, 195, 235);
+font: 9pt &quot;Cascadia Code SemiLight&quot;;
+border:2px solid #ffffff;
+border-radius:8px;
+}
+QComboBox::drop-down{
+subcontrol-origin: padding;
+width:40px;
+border-left-width :  2px ;
+border-left-color : #ffffff;
+border-left-style :  solid ;  
+border-top-right-radius:  3px ;  
+border-bottom-right-radius:  3px ;
+}
+QComboBox::down-arrow{
+image:url(./Icon/angle-small-down.png)
+}
+QPushButton{
+	border:2px solid #ffffff;
+	border-radius:8px;
+	background-color: rgb(137, 195, 235);	
+	color: rgb(0, 0, 70);
+	
+	font: 9pt &quot;Calibri&quot;;
+	border-radius: 10px;
+}
+QPushButton:hover{ 
+background:rgb(137, 195, 255);
+border-radius:15px;
+border:1px solid #00046;
+}
+QPushButton:pressed{
+border: 1px solid #3C3C3C;
+background:rgb(124, 195, 255);
+}</string>
+      </property>
+      <property name="title">
+       <string>heterogeneityCAD input</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>441</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cascadia Code SemiLight</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>dir List</string>
+       </property>
+       <widget class="QTextBrowser" name="textBrowser_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>421</width>
+          <height>521</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>620</y>
+         <width>441</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string>Select Features</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>530</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QCheckBox" name="checkBox_All_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Enable All Features</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_First_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>First Order Statistics(19 features)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glcm_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glcm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_shape_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Shape-based(3D) (16 features)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glrlm_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glrlm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_glszm_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>glszm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_gldm_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>gldm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_ngtdm_2">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>ngtdm</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>451</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>load</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1140</y>
+        <width>461</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>471</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Extract robust radiomics features</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>471</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate the Risk score</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1090</y>
+        <width>471</width>
+        <height>101</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sample">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>471</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_OS">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>610</y>
+        <width>471</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>pushButton_5</zorder>
+     <zorder>pushButton_11</zorder>
+     <zorder>textBrowser_4</zorder>
+     <zorder>label_OS</zorder>
+     <zorder>label_sample</zorder>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>471</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Extract robust radiomics features</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>471</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Train RadioML</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>471</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate the Risk score</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sample_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>471</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_OS_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>730</y>
+        <width>471</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_features">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>471</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Text the number of features(5-20) you want</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>221</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(44, 62, 80);
+background-color: rgb(77, 108, 140);
+font: 9pt &quot;Arial Narrow&quot;;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>             Tools For U </string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>690</y>
+      <width>231</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PreTrained</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Train</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>60</y>
+      <width>103</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="geometry">
+     <rect>
+      <x>1720</x>
+      <y>60</y>
+      <width>103</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_20">
+    <property name="geometry">
+     <rect>
+      <x>1830</x>
+      <y>60</y>
+      <width>103</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_21">
+    <property name="geometry">
+     <rect>
+      <x>1940</x>
+      <y>60</y>
+      <width>103</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>9</y>
+      <width>1301</width>
+      <height>1381</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_7">
+     <widget class="QGraphicsView" name="graphicsView_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>870</y>
+        <width>401</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_4">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>870</y>
+        <width>431</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_00"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>870</y>
+        <width>431</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_04"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>870</y>
+        <width>401</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_03"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_02"/>
+     </widget>
+     <zorder>graphicsView</zorder>
+     <zorder>graphicsView_3</zorder>
+     <zorder>graphicsView_2</zorder>
+     <zorder>graphicsView_4</zorder>
+     <zorder>gridLayoutWidget_17</zorder>
+     <zorder>gridLayoutWidget_18</zorder>
+     <zorder>gridLayoutWidget_19</zorder>
+     <zorder>gridLayoutWidget_20</zorder>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QGraphicsView" name="graphicsView_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_8">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_7">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_05"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>870</y>
+        <width>431</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_06"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_07"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_08"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QGraphicsView" name="graphicsView_12">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_11">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1281</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_09"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_012"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_011"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_010"/>
+     </widget>
+     <zorder>graphicsView_9</zorder>
+     <zorder>graphicsView_12</zorder>
+     <zorder>graphicsView_10</zorder>
+     <zorder>graphicsView_11</zorder>
+     <zorder>gridLayoutWidget_9</zorder>
+     <zorder>gridLayoutWidget_10</zorder>
+     <zorder>gridLayoutWidget_11</zorder>
+     <zorder>gridLayoutWidget_12</zorder>
+    </widget>
+    <widget class="QWidget" name="page_10">
+     <widget class="QGraphicsView" name="graphicsView_16">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_15">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 40px;
+border-image: url(:/Img/Img/maxblue.png);</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>1271</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_013"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_014"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_15">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>870</y>
+        <width>411</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_015"/>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>870</y>
+        <width>421</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_016"/>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>60</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_001"/>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>1720</x>
+      <y>60</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_002"/>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>1830</x>
+      <y>60</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_003"/>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>1940</x>
+      <y>60</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_004"/>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>650</y>
+      <width>221</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(44, 62, 80);
+background-color: rgb(77, 108, 140);
+font: 9pt &quot;Arial Narrow&quot;;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>               RadioML</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>stackedWidget_3</zorder>
+   <zorder>pushButton_close</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>verticalLayoutWidget_3</zorder>
+   <zorder>stackedWidget_2</zorder>
+   <zorder>label_2</zorder>
+   <zorder>listWidget_2</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>gridLayoutWidget_2</zorder>
+   <zorder>gridLayoutWidget_3</zorder>
+   <zorder>gridLayoutWidget_4</zorder>
+   <zorder>pushButton_18</zorder>
+   <zorder>pushButton_19</zorder>
+   <zorder>pushButton_20</zorder>
+   <zorder>pushButton_21</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="bg.qrc"/>
+ </resources>
+ <connections/>
+</ui>
