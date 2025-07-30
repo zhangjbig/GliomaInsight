@@ -69,6 +69,7 @@ cd YourProject
 ---
 
 ## zippedfiles
+### After installation, cd zippedfiles and perform the following: 
 * unzip corrected_image.nii.zip, and put the unzipped file under the directory of ./Icon
 * unzip MEN_001_0000.zip, and put the unzipped file under the directory of ./lib/DLP/Test_data
 
